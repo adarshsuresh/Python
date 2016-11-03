@@ -1,0 +1,59 @@
+Assignment 2 Report
+
+Name: Adarsh Suresh Mangalath
+
+Part I.
+
+1. Performance of standard perceptron on the development data with 100% of the training data
+1a. spam precision: 0.988
+1b. spam recall: 0.978
+1c. spam F1 score: 0.983
+1d. ham precision: 0.948
+1e. ham recall: 0.972
+1f. ham F1 score: 0.960
+
+2. Performance of averaged perceptron on the development data with 100% of the training data
+2a. spam precision: 0.986
+2b. spam recall: 0.980
+2c. spam F1 score: 0.983
+2d. ham precision: 0.952
+2e. ham recall: 0.966
+2f. ham F1 score: 0.958
+
+Part II.
+
+3. Performance of standard perceptron on the development data with 10% of the training data
+3a. spam precision: 0.978
+3b. spam recall: 0.955
+3c. spam F1 score: 0.966
+3d. ham precision: 0.896
+3e. ham recall: 0.949
+3f. ham F1 score: 0.921
+
+4. Performance of averaged perceptron on the development data with 10% of the training data
+4a. spam precision: 0.976
+4b. spam recall: 0.947
+4c. spam F1 score: 0.961
+4d. ham precision: 0.879
+4e. ham recall: 0.943
+4f. ham F1 score: 0.910
+
+Part III. You are welcome to reuse code you wrote for assignment 1,
+but we would like to know how you handled the following tasks.
+
+5. How did you calculate precision, recall and F1 score? If you used a
+separate script, please give the name of the script and describe how
+to run it.
+
+ANS: I used a seperate script called per_performace.py.
+    python3 per_performance.py path/to/train/data path/to/dev/data
+    
+
+6. How did you separate 10% of the training data? If you used a
+separate script, please give the name of the script and describe how
+to run it. Explain how you or your code choose the files.
+
+ANS: I used a script called DataGenerator10.py.To run the 10% data generator
+ python3 DataGenerator10.py path/to/exsisting/root path/to/the/new/root.
+ The script takes each folder and selects 10% of data at random, copies the
+ files to the  new root and also recreates the similar directory structure.
